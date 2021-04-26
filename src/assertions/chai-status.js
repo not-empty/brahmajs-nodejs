@@ -1,4 +1,4 @@
-module.exports = (_chai, utils) => {
+module.exports = (_chai) => {
   const { Assertion } = _chai;
 
   function assertStatus(status) {

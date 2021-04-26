@@ -1,14 +1,13 @@
-const fs = require('fs');
-const { getFiles, readJson } = require('./file');
+const f = require('./file');
 const proc = require('./process');
 
-const exports = module.exports = {};
+module.exports = {};
 
-exports.run = (location, context) => {
-  const files = getFiles(location);
+module.exports.run = (location, context) => {
+  const files = f.getFiles(location);
 
   files.forEach((file) => {
-    const test = readJson(file);
+    const test = f.readJson(file);
     proc.runTest(test, context);
   });
 };

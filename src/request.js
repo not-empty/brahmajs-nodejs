@@ -1,10 +1,10 @@
 const axios = require('axios');
 
-const exports = module.exports = {};
+module.exports = {};
 
-exports.transformData = null;
+module.exports.transformData = null;
 
-exports.send = async (method, url, formData = {}, params = {}) => {
+module.exports.send = async (method, url, formData = {}, params = {}) => {
   const requestData = {
     method,
     url,
@@ -16,13 +16,11 @@ exports.send = async (method, url, formData = {}, params = {}) => {
   };
 
   if (formData) {
-    requestData.data = typeof exports.transformData === 'function'
-      ? exports.transformData(formData)
+    requestData.data = typeof module.exports.transformData === 'function'
+      ? module.exports.transformData(formData)
       : formData;
   }
 
   return axios.request(requestData)
-    .then((response) =>
-    // console.log(`axios request success ${requestData.url}`, response.data);
-      response);
+    .then((response) => response);
 };

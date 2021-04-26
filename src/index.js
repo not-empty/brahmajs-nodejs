@@ -3,14 +3,12 @@ const request = require('./request');
 const template = require('./template');
 const plugins = require('./assertions');
 
-const exports = module.exports = {};
+module.exports = {};
 
-exports.request = request;
+module.exports.request = request;
 
-exports.template = template;
+module.exports.template = template;
 
-exports.chai = chai;
+module.exports.chai = chai;
 
-for (const k in plugins) {
-  exports.chai.use(plugins[k]);
-}
+plugins.forEach((chaiPlugin) => module.exports.chai.use(chaiPlugin));

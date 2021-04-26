@@ -1,5 +1,7 @@
 module.exports = (_chai, utils) => {
-  // let Assertion = _chai.Assertion;
+  function isInteger(num) {
+    return (num % 1 === 0);
+  }
 
   function assertInteger() {
     const obj = this._obj;
@@ -13,9 +15,4 @@ module.exports = (_chai, utils) => {
   }
 
   utils.addMethod(_chai.Assertion.prototype, 'integer', assertInteger);
-  // Assertion.addMethod('integer', assertInteger);
 };
-
-function isInteger(num) {
-  return (num % 1 === 0);
-}
