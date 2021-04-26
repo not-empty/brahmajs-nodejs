@@ -27,7 +27,8 @@
   "homepage": "https://github.com/kiwfy/brahmajs#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "chai": "^4.3.4"
+    "chai": "^4.3.4",
+    "chai-json-schema": "^1.5.1"
   },
   "devDependencies": {
     "mocha": "^8.3.2"
