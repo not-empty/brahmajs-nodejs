@@ -1,0 +1,35 @@
+{
+  "name": "brahmajs",
+  "version": "1.0.0",
+  "description": "A framework for API testing based on Mocha, Chai and Axios",
+  "main": "index.js",
+  "author": "Developer <dev@kiwfy.com>",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwfy/brahmajs.git"
+  },
+  "keywords": [
+    "Brahma",
+    "Brahmajs",
+    "Test",
+    "Testing",
+    "Mocha",
+    "Chai",
+    "Json"
+  ],
+  "bugs": {
+    "url": "https://github.com/kiwfy/brahmajs/issues"
+  },
+  "homepage": "https://github.com/kiwfy/brahmajs#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.2"
+  }
+}
