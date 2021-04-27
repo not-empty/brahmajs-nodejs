@@ -1,6 +1,6 @@
 {
   "name": "brahmajs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A framework for API testing based on Mocha, Chai and Axios",
   "main": "./src/index.js",
   "author": "Developer <dev@kiwfy.com>",
